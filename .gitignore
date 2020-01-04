@@ -1,0 +1,10 @@
+
+# dependencies
+/node_modules
+
+# testing
+variables.env
+
+
+# misc
+.DS_Store
