@@ -65,9 +65,8 @@ exports.nuevoProyecto = async (req,res,next) => {
                 const Resultado = await Proyectos.create({nombre, usuarioId});
                 if(!Resultado) {
                         return next();
-                }
-                        
-                res.redirect('/');
+                }      
+                res.redirect('/proyectos/' + Resultado.url );
                 
                 /*
                 Proyectos.create({nombre})
